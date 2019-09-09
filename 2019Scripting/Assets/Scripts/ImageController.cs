@@ -1,13 +1,11 @@
 ﻿
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Image))]
 public class ImageController : MonoBehaviour
 {
     private Image imageComponent; 
-    public UnityEvent UpdateUnityEvent;
 
     private void Start()
     {
@@ -18,7 +16,5 @@ public class ImageController : MonoBehaviour
     {
         imageComponent.fillAmount = dataObj.value;
     }
-   private void Update () {
-       UpdateImageEvent.Invoke();
-        }
+   
 }
